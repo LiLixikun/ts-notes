@@ -1,21 +1,11 @@
-// import koa from 'koa'
+import koa from 'koa'
+import router from './router'
+const app = new koa()
 
-// const app = new koa()
-// app.use(ctx => {
-//     ctx.body = 'hell typescript'
-// })
-// app.listen("8003", () => {
-//     console.log('app run 8003');
-// })
+app.use(router.routes())
 
-class Crowller {
-    constructor() {
-        // this.init()
-    }
-    init() {
-        return "!23"
-    }
-}
+app.listen("8003", () => {
+    console.log('app run 8003');
+})
 
-const result = new Crowller()
-console.log(result.init());
+

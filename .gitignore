@@ -2,3 +2,5 @@ node_modules
 /.cache
 /data
 /dist
+/build
+/learn
