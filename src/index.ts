@@ -1,5 +1,7 @@
 import koa from 'koa'
+import './controller/index'
 import router from './router'
+
 const app = new koa()
 
 app.use(router.routes())
